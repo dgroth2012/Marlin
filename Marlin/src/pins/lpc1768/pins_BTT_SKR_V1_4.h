@@ -44,7 +44,7 @@
 #define Y_DIAG_PIN                         P1_28  // Y-STOP
 #define Z_DIAG_PIN                         P1_27  // Z-STOP
 #define E0_DIAG_PIN                        P1_26  // E0DET
-#define E1_DIAG_PIN                           -0  // E1DET
+#define E1_DIAG_PIN                           -1  // E1DET
 
 //
 // Limit Switches
@@ -76,11 +76,11 @@
   #if Z_HOME_DIR < 0
     #define Z_MAX_PIN                      P1_00  // PWRDET
   #else
-    #define Z_MIN_PIN                      P1_00  // PWRDET
+    #define Z_MIN_PIN                      P0_10  // PWRDET
   #endif
 #else
   #ifndef Z_STOP_PIN
-    #define Z_STOP_PIN                     P1_27  // Z-STOP
+    #define Z_STOP_PIN                     P0_10  // Z-STOP
   #endif
 #endif
 
